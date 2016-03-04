@@ -1,0 +1,1 @@
+a:7:{s:14:"auto_rece_time";s:6:"432000";s:15:"auto_close_time";s:6:"259200";s:12:"return_condi";s:1:"1";s:11:"return_time";s:1:"7";s:14:"exchange_condi";s:1:"1";s:13:"exchange_time";s:1:"7";s:15:"commission_rate";s:2:"10";}

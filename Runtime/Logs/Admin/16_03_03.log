@@ -1,0 +1,2844 @@
+[ 2016-03-03T01:10:08+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+
+[ 2016-03-03T01:10:08+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003858s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+
+[ 2016-03-03T01:10:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002714s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-03-03T01:10:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html&random=0.9426073750946671
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003895s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+
+[ 2016-03-03T01:10:41+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003795s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0137s ]
+SQL: SELECT `uid`,`nickname`,`headimgurl`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`update_time`,`status` FROM `t_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0031s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1456938640','root在2016-03-03 01:10:40登录了后台') [ RunTime:0.0039s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1456852240 LIMIT 1   [ RunTime:0.0046s ]
+SQL: UPDATE `t_member` SET `login`=`login`+1,`last_login_time`='1456938640',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0075s ]
+
+[ 2016-03-03T01:10:43+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+
+[ 2016-03-03T01:10:48+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001447s ]
+
+[ 2016-03-03T01:10:54+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002870s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-03-03T01:12:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002678s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-03-03T01:12:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002782s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+
+[ 2016-03-03T01:13:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-03-03T01:13:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+
+[ 2016-03-03T01:15:28+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-03-03T01:15:34+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-03-03T01:19:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-03T01:24:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002936s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+
+[ 2016-03-03T01:24:16+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/4/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004497s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-03-03T01:24:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/4/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002648s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-03-03T09:33:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+
+[ 2016-03-03T09:33:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003637s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2016-03-03T09:33:47+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0173s ]
+SQL: SELECT `uid`,`nickname`,`headimgurl`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`update_time`,`status` FROM `t_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0094s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1456968826','root在2016-03-03 09:33:46登录了后台') [ RunTime:0.0073s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 1 D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1456882426 LIMIT 1   [ RunTime:0.0023s ]
+SQL: UPDATE `t_member` SET `login`=`login`+1,`last_login_time`='1456968826',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0049s ]
+
+[ 2016-03-03T09:33:49+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003940s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-03-03T09:34:08+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002634s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-03-03T09:34:14+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-03-03T09:44:48+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-03-03T09:46:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-03-03T09:46:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003567s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-03-03T09:51:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003395s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+
+[ 2016-03-03T09:55:21+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002621s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-03-03T09:55:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002615s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-03-03T09:58:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002649s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-03-03T09:58:04+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-03-03T09:58:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002942s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-03-03T10:00:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002894s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+
+[ 2016-03-03T10:00:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-03-03T10:04:16+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002642s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-03-03T10:04:20+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003475s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-03-03T10:05:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-03-03T10:08:51+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002689s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+
+[ 2016-03-03T10:09:10+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002870s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+
+[ 2016-03-03T10:14:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003622s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-03-03T10:14:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-03-03T10:18:34+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003480s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+
+[ 2016-03-03T10:18:51+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006458s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+
+[ 2016-03-03T10:19:49+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011219s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002293s ]
+
+[ 2016-03-03T10:20:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003771s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-03-03T10:21:30+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002759s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+
+[ 2016-03-03T10:21:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002372s ]
+
+[ 2016-03-03T10:22:18+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002742s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-03-03T10:22:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003691s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001967s ]
+
+[ 2016-03-03T10:22:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002637s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-03-03T10:24:31+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002419s ]
+
+[ 2016-03-03T10:29:38+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002670s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+
+[ 2016-03-03T10:29:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002547s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-03-03T10:29:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/6/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-03-03T10:30:11+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/10/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004259s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+
+[ 2016-03-03T10:33:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/10/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005908s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-03-03T10:34:04+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-03-03T10:36:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/6/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-03-03T10:37:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-03-03T10:37:16+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002722s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+
+[ 2016-03-03T10:43:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003655s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-03-03T10:43:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-03-03T10:43:34+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004816s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-03-03T10:45:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+
+[ 2016-03-03T10:46:47+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002628s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+
+[ 2016-03-03T10:46:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003998s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-03-03T10:48:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-03-03T11:04:14+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-03-03T11:05:31+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003857s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004783s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-03-03T11:05:38+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004575s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-03-03T11:06:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002497s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+
+[ 2016-03-03T11:07:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002866s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+
+[ 2016-03-03T11:08:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002772s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+
+[ 2016-03-03T11:11:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-03-03T11:12:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+
+[ 2016-03-03T11:13:30+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003327s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+
+[ 2016-03-03T11:13:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004554s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-03-03T11:16:07+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004348s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+
+[ 2016-03-03T11:16:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002849s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+
+[ 2016-03-03T11:19:52+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003505s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+
+[ 2016-03-03T11:23:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002687s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-03-03T11:23:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-03T11:23:51+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003929s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-03-03T11:25:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002696s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-03-03T11:25:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-03-03T11:26:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002705s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+
+[ 2016-03-03T11:27:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002616s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-03-03T11:27:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-03-03T11:28:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010844s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002355s ]
+
+[ 2016-03-03T11:29:16+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003889s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+
+[ 2016-03-03T11:29:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002739s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-03-03T11:31:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002543s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+
+[ 2016-03-03T11:31:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002929s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+
+[ 2016-03-03T11:32:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002660s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-03-03T11:32:42+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/7/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002582s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-03T11:32:47+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003459s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+
+[ 2016-03-03T11:33:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002614s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+
+[ 2016-03-03T11:33:18+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003638s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-03-03T11:33:20+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-03-03T11:33:47+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-03T11:34:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002642s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-03-03T11:34:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008420s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002881s ]
+
+[ 2016-03-03T11:34:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004773s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-03-03T11:34:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003286s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-03-03T11:35:07+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002607s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-03-03T11:36:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002511s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+
+[ 2016-03-03T11:37:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002572s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-03-03T11:41:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003374s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002257s ]
+
+[ 2016-03-03T11:41:28+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-03-03T11:42:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004984s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-03-03T11:43:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002647s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-03-03T11:44:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005736s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-03-03T11:45:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006869s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+
+[ 2016-03-03T11:46:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003562s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+
+[ 2016-03-03T11:47:14+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-03-03T11:48:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-03-03T11:48:39+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003372s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+
+[ 2016-03-03T11:49:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002592s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+
+[ 2016-03-03T11:51:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002648s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+
+[ 2016-03-03T11:52:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002508s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-03-03T11:53:30+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002636s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+
+[ 2016-03-03T11:53:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-03-03T11:54:41+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003626s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-03-03T11:55:05+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002986s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-03-03T11:58:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002672s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-03-03T11:58:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004986s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+
+[ 2016-03-03T11:59:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007229s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+
+[ 2016-03-03T11:59:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003598s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+
+[ 2016-03-03T11:59:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003652s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002227s ]
+
+[ 2016-03-03T12:00:01+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002651s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+
+[ 2016-03-03T12:00:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002522s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-03-03T12:03:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003232s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+
+[ 2016-03-03T12:04:03+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/8/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002587s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-03-03T12:06:28+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005314s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+
+[ 2016-03-03T12:06:43+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003970s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+
+[ 2016-03-03T12:08:14+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002583s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+
+[ 2016-03-03T12:08:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003840s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-03-03T12:08:39+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-03-03T12:08:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001370s ]
+
+[ 2016-03-03T12:09:27+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003688s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+
+[ 2016-03-03T12:09:42+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/5/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002766s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-03-03T12:12:54+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/5/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-03-03T12:13:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/6/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-03-03T12:13:41+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/6/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+
+[ 2016-03-03T12:13:48+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/6/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-03-03T14:09:51+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002610s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+
+[ 2016-03-03T14:10:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/5/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004580s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2016-03-03T14:11:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/5/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-03-03T14:11:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/5/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-03T14:12:21+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+
+[ 2016-03-03T14:13:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004605s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002553s ]
+
+[ 2016-03-03T14:13:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008223s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004685s ]
+
+[ 2016-03-03T14:13:41+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-03-03T14:13:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004875s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002021s ]
+
+[ 2016-03-03T14:15:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003295s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+
+[ 2016-03-03T14:15:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/4/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002320s ]
+
+[ 2016-03-03T14:15:28+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004670s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+
+[ 2016-03-03T14:22:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/4/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003992s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-03-03T14:22:30+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003651s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-03-03T14:22:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002455s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+
+[ 2016-03-03T14:23:20+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002647s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+
+[ 2016-03-03T14:23:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+
+[ 2016-03-03T14:24:22+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-03-03T14:26:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004353s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+
+[ 2016-03-03T14:26:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004437s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+
+[ 2016-03-03T14:28:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002551s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-03-03T14:29:05+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002619s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-03-03T14:30:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002551s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-03T14:30:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-03-03T14:33:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007620s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+
+[ 2016-03-03T14:34:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002629s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-03-03T14:35:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002799s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-03-03T14:35:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003505s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-03-03T14:38:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002533s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-03-03T14:40:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002621s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-03-03T14:41:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002580s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+
+[ 2016-03-03T14:42:17+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002937s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+
+[ 2016-03-03T14:43:58+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003802s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-03-03T14:44:27+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002432s ]
+
+[ 2016-03-03T14:44:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002955s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-03-03T14:44:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+
+[ 2016-03-03T14:44:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003918s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+
+[ 2016-03-03T14:45:39+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+
+[ 2016-03-03T14:49:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+
+[ 2016-03-03T14:50:16+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004434s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002449s ]
+
+[ 2016-03-03T14:54:44+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-03-03T14:56:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003699s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+
+[ 2016-03-03T14:56:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004564s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-03-03T14:56:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002685s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+
+[ 2016-03-03T14:57:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011378s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+
+[ 2016-03-03T14:58:52+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+
+[ 2016-03-03T15:00:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+
+[ 2016-03-03T15:00:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004502s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+
+[ 2016-03-03T15:00:20+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003717s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-03-03T15:00:23+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+
+[ 2016-03-03T15:01:22+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002544s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-03-03T15:01:27+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004909s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003846s ]
+
+[ 2016-03-03T15:01:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004327s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-03-03T15:04:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007369s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+
+[ 2016-03-03T15:04:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003839s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002691s ]
+
+[ 2016-03-03T15:04:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005291s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+
+[ 2016-03-03T15:05:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002577s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-03-03T15:05:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003903s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+
+[ 2016-03-03T15:05:27+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+
+[ 2016-03-03T15:08:31+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+
+[ 2016-03-03T15:08:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003612s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+ERR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: 'date('Y-m-d H:i:s',time())' for column 'updateTime' at row 1
+
+[ 2016-03-03T15:09:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+ERR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: 'date('Y-m-d H:i:s',time())' for column 'updateTime' at row 1
+
+[ 2016-03-03T15:09:43+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004659s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+ERR: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: 'date('Y-m-d H:i:s',time())' for column 'updateTime' at row 1
+
+[ 2016-03-03T15:09:47+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002590s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-03-03T15:09:52+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003544s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-03-03T15:09:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+
+[ 2016-03-03T15:09:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005818s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-03-03T15:10:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002475s ]
+
+[ 2016-03-03T15:10:42+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003915s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+
+[ 2016-03-03T15:10:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+
+[ 2016-03-03T15:11:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight/id/1/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003854s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-03-03T15:11:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/editfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004365s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+
+[ 2016-03-03T15:12:01+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-03-03T15:28:10+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+
+[ 2016-03-03T15:28:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/delfreight/id/4/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013136s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0118s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Freight/delfreight%' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_freight_tpl` [ RunTime:0.0051s ]
+SQL: UPDATE `t_freight_tpl` SET `status`='DEL' WHERE `ID` = 4 [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: id D:\amp\apache\htdocs\aladdin\Application\Admin\Controller\FreightController.class.php 第 116 行.
+
+[ 2016-03-03T15:28:18+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003372s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+
+[ 2016-03-03T15:28:38+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/delfreight/id/5/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002513s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0086s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Freight/delfreight%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_freight_tpl` [ RunTime:0.0079s ]
+SQL: UPDATE `t_freight_tpl` SET `status`='DEL' WHERE `ID` = 5 [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: id D:\amp\apache\htdocs\aladdin\Application\Admin\Controller\FreightController.class.php 第 116 行.
+
+[ 2016-03-03T15:28:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-03-03T15:28:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/delfreight/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008187s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0106s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Freight/delfreight%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_freight_tpl` [ RunTime:0.0051s ]
+SQL: UPDATE `t_freight_tpl` SET `status`='DEL' WHERE `ID` = 3 [ RunTime:0.0046s ]
+NOTIC: [8] Undefined index: id D:\amp\apache\htdocs\aladdin\Application\Admin\Controller\FreightController.class.php 第 116 行.
+
+[ 2016-03-03T15:28:48+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005023s ]
+
+[ 2016-03-03T15:32:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002661s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-03-03T15:32:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/delfreight/id/10/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014901s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007328s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0086s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Freight/delfreight%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_freight_tpl` [ RunTime:0.0081s ]
+SQL: UPDATE `t_freight_tpl` SET `status`='DEL',`delTime`='2016-03-03 15:32:12' WHERE `ID` = 10 [ RunTime:0.0063s ]
+NOTIC: [8] Undefined index: id D:\amp\apache\htdocs\aladdin\Application\Admin\Controller\FreightController.class.php 第 117 行.
+
+[ 2016-03-03T15:32:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009683s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-03-03T15:54:30+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/arealist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002850s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-03-03T16:03:31+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003670s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+
+[ 2016-03-03T16:06:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+
+[ 2016-03-03T16:07:49+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003440s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+
+[ 2016-03-03T16:10:48+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003713s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+
+[ 2016-03-03T16:11:27+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002742s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+
+[ 2016-03-03T16:16:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002893s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-03-03T16:17:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003855s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+
+[ 2016-03-03T16:20:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addarea/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002730s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+
+[ 2016-03-03T16:20:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addarea/id/3/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005336s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-03-03T16:20:43+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addarea/id/9/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002972s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-03-03T16:23:18+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003149s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-03-03T16:23:54+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003415s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-03-03T16:23:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002576s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-03-03T16:24:03+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-03-03T16:24:11+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+
+[ 2016-03-03T16:32:38+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/arealist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-03-03T16:34:31+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/arealist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002686s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-03-03T16:38:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002879s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-03-03T16:39:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addarea/id/6/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+
+[ 2016-03-03T16:51:23+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addarea/id/2/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002552s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-03-03T17:01:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002882s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+
+[ 2016-03-03T17:02:07+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005535s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+
+[ 2016-03-03T17:13:22+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/supplier/supplierlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+
+[ 2016-03-03T17:13:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/supplier/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004250s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: 非法操作:add
+
+[ 2016-03-03T17:13:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/supplier/addsupplier.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+
+[ 2016-03-03T17:13:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/supplier/tooglehide/id/135/value/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003573s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0151s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Supplier/tooglehide%' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:tooglehide
+
+[ 2016-03-03T17:13:34+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/supplier/tooglehide/id/135/value/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0114s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Supplier/tooglehide%' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0004s ]
+ERR: 非法操作:tooglehide
+
+[ 2016-03-03T17:13:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/supplier/tooglehide/id/135/value/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003770s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0111s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Supplier/tooglehide%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:tooglehide
+
+[ 2016-03-03T17:16:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002636s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+
+[ 2016-03-03T17:16:21+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003835s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-03-03T17:16:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/tooglehide/id/135/value/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003541s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Freight/tooglehide%' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0002s ]
+ERR: 非法操作:tooglehide
+
+[ 2016-03-03T17:16:27+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/tooglehide/id/135/value/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003663s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0124s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Freight/tooglehide%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 非法操作:tooglehide
+
+[ 2016-03-03T17:18:39+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002677s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+
+[ 2016-03-03T17:18:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-03-03T17:22:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002512s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-03-03T17:23:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003670s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-03-03T17:23:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+
+[ 2016-03-03T17:24:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002828s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-03-03T17:24:33+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+
+[ 2016-03-03T17:24:52+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+
+[ 2016-03-03T17:26:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003590s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+
+[ 2016-03-03T17:26:34+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003267s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001776s ]
+
+[ 2016-03-03T17:27:04+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004583s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-03-03T17:27:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-03-03T17:29:46+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002562s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+
+[ 2016-03-03T17:29:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002512s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-03-03T17:30:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002495s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-03-03T17:37:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-03-03T17:44:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003190s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+
+[ 2016-03-03T17:49:20+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002667s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+
+[ 2016-03-03T17:52:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003918s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+
+[ 2016-03-03T17:54:28+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.014254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+
+[ 2016-03-03T18:03:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005416s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-03-03T18:05:03+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-03T23:17:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+
+[ 2016-03-03T23:17:50+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003741s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-03-03T23:18:09+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002628s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0466s ]
+SQL: SELECT `uid`,`nickname`,`headimgurl`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`update_time`,`status` FROM `t_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0084s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1457018287','root在2016-03-03 23:18:07登录了后台') [ RunTime:0.0064s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 1 D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1456931887 LIMIT 1   [ RunTime:0.0040s ]
+SQL: UPDATE `t_member` SET `login`=`login`+1,`last_login_time`='1457018287',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0063s ]
+
+[ 2016-03-03T23:18:11+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004659s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-03-03T23:18:22+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/freightlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003551s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+
+[ 2016-03-03T23:18:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004940s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+
+[ 2016-03-03T23:20:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-03-03T23:40:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003536s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-03-03T23:40:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002777s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+
+[ 2016-03-03T23:42:03+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-03-03T23:42:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+
+[ 2016-03-03T23:42:54+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013910s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+
+[ 2016-03-03T23:46:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003623s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-03-03T23:47:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002429s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+
+[ 2016-03-03T23:47:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+
+[ 2016-03-03T23:47:34+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003536s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+
+[ 2016-03-03T23:51:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007940s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+
+[ 2016-03-03T23:51:41+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004656s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-03-03T23:51:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012241s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003154s ]
+
+[ 2016-03-03T23:56:16+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002697s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-03-03T23:56:19+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002672s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-03-03T23:56:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/freight/addfreight.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+

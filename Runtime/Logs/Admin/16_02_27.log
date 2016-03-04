@@ -1,0 +1,739 @@
+[ 2016-02-27T00:12:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002830s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
+[ 2016-02-27T00:12:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002425s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-02-27T00:12:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003941s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+
+[ 2016-02-27T00:12:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009624s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0126s ]
+SQL: SELECT `uid`,`nickname`,`headimgurl`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`update_time`,`status` FROM `t_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0084s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1456503176','root在2016-02-27 00:12:56登录了后台') [ RunTime:0.0075s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 1 D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1456416776 LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `t_member` SET `login`=`login`+1,`last_login_time`='1456503176',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0045s ]
+
+[ 2016-02-27T00:13:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004774s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+
+[ 2016-02-27T00:13:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011896s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002671s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+
+[ 2016-02-27T00:18:49+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012919s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004723s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+
+[ 2016-02-27T00:21:52+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003747s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+
+[ 2016-02-27T00:29:03+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003577s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-02-27T00:30:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003738s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004849s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+
+[ 2016-02-27T00:33:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+
+[ 2016-02-27T00:41:54+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002890s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+
+[ 2016-02-27T00:42:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+
+[ 2016-02-27T10:23:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003617s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-02-27T10:23:14+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002444s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+
+[ 2016-02-27T10:23:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/verify.html&random=0.44629714312031865
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002769s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+
+[ 2016-02-27T10:23:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005987s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `t_member` [ RunTime:0.0162s ]
+SQL: SELECT `uid`,`nickname`,`headimgurl`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`update_time`,`status` FROM `t_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0035s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1456539815','root在2016-02-27 10:23:35登录了后台') [ RunTime:0.0054s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\amp\apache\htdocs\aladdin\Application\Common\Common\function.php 第 737 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1456453415 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `t_member` SET `login`=`login`+1,`last_login_time`='1456539815',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0038s ]
+
+[ 2016-02-27T10:23:39+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003708s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+
+[ 2016-02-27T10:23:43+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003452s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-02-27T10:41:39+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003788s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+
+[ 2016-02-27T10:47:58+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002569s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002268s ]
+
+[ 2016-02-27T10:48:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002570s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and attrValue=''颜色'=>'白'' )' at line 1
+
+[ 2016-02-27T10:54:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002558s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+
+[ 2016-02-27T10:55:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002933s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-02-27T10:57:22+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003656s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-02-27T11:01:20+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003969s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+
+[ 2016-02-27T11:03:14+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003233s ]
+
+[ 2016-02-27T11:04:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007464s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002709s ]
+
+[ 2016-02-27T11:05:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005153s ]
+
+[ 2016-02-27T11:06:47+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+
+[ 2016-02-27T11:17:29+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002768s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-02-27T11:19:01+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002787s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+
+[ 2016-02-27T11:20:32+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002586s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-02-27T11:22:23+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009502s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003574s ]
+
+[ 2016-02-27T14:50:53+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003320s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+
+[ 2016-02-27T15:45:35+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+
+[ 2016-02-27T15:51:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/attribute/addattr.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002754s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-02-27T16:09:37+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/user/paasusers.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-02-27T16:10:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002760s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-02-27T16:10:40+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003560s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+
+[ 2016-02-27T16:12:26+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/add/pid/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0118s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Menu/add%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0039s ]
+SQL: INSERT INTO `t_menu` (`id`,`title`,`sort`,`url`,`pid`,`group`,`hide`,`is_dev`,`class_fix`,`status`) VALUES ('0','会员管理','0','#Member','0','','0','0','','1') [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0036s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','243','1456560745','操作url：/aladdin/root/admin.php?s=/menu/add/pid/0.html') [ RunTime:0.0040s ]
+
+[ 2016-02-27T16:12:28+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+
+[ 2016-02-27T16:12:56+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index/pid/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002626s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+
+[ 2016-02-27T16:13:02+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003452s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-02-27T16:13:41+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/151.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003511s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+
+[ 2016-02-27T16:14:01+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003749s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-02-27T16:14:12+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002690s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0144s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Menu/edit%' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0060s ]
+SQL: UPDATE `t_menu` SET `title`='会员管理',`sort`='2',`url`='#Member',`pid`='0',`group`='',`hide`='0',`is_dev`='0',`class_fix`='icon-group' WHERE `id` = 243 [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0037s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','243','1456560851','操作url：/aladdin/root/admin.php?s=/menu/edit/id/243.html') [ RunTime:0.0038s ]
+
+[ 2016-02-27T16:14:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index/pid/16.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004594s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+
+[ 2016-02-27T16:14:36+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002829s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+
+[ 2016-02-27T16:14:58+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-02-27T16:16:08+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003413s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+
+[ 2016-02-27T16:16:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/add/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+
+[ 2016-02-27T16:16:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/add/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002674s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Menu/add%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0036s ]
+SQL: INSERT INTO `t_menu` (`id`,`title`,`sort`,`url`,`pid`,`group`,`hide`,`is_dev`,`class_fix`,`status`) VALUES ('0','会员列表','0','Member/index','243','','0','0','','1') [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0037s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','244','1456561014','操作url：/aladdin/root/admin.php?s=/menu/add/pid/243.html') [ RunTime:0.0039s ]
+
+[ 2016-02-27T16:16:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002707s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-02-27T16:17:07+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/add/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003782s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+
+[ 2016-02-27T16:17:55+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/user/paasusers.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-02-27T16:18:18+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005438s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+
+[ 2016-02-27T16:18:24+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003791s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-02-27T16:18:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/244.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+
+[ 2016-02-27T16:18:57+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/edit/id/244.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002984s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0138s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE ( url like '%Menu/edit%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 75 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`pid`,`title` FROM `t_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_xxfb_platform_notices` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `t_xxfb_platform_notices` WHERE `status` = 'NO#' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_menu` [ RunTime:0.0054s ]
+SQL: UPDATE `t_menu` SET `title`='会员查询',`sort`='0',`url`='Member/index',`pid`='243',`group`='',`hide`='0',`is_dev`='0',`class_fix`='' WHERE `id` = 244 [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `t_action` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `t_action` WHERE `name` = 'update_menu' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_action_log` [ RunTime:0.0037s ]
+SQL: INSERT INTO `t_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('10','1','2130706433','Menu','244','1456561136','操作url：/aladdin/root/admin.php?s=/menu/edit/id/244.html') [ RunTime:0.0038s ]
+
+[ 2016-02-27T16:18:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/menu/index/pid/243.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004406s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-02-27T16:19:09+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/user/paasusers.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+
+[ 2016-02-27T16:24:04+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003616s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+
+[ 2016-02-27T16:26:09+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002974s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+
+[ 2016-02-27T16:31:59+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-02-27T16:32:06+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003864s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+
+[ 2016-02-27T17:36:08+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002994s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+
+[ 2016-02-27T17:39:13+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/user/paasusers.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003475s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-02-27T17:43:45+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002760s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-02-27T17:44:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/user/paasusers.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+
+[ 2016-02-27T17:55:03+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+
+[ 2016-02-27T17:56:25+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002790s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+
+[ 2016-02-27T17:58:15+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002618s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+
+[ 2016-02-27T18:35:00+08:00 ] 127.0.0.1 /aladdin/root/admin.php?s=/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002713s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
